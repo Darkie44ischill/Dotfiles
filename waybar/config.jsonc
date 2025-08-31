@@ -1,0 +1,94 @@
+{
+  "spacing": 0,
+  "height": 32,
+  "margin-bottom": 0,
+  "margin-top": 0,
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/music-info",
+    "custom/music-prev",
+    "custom/music-play",
+    "custom/music-next"
+  ],
+  "modules-center": [
+    "custom/power"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "pulseaudio",
+    "clock"
+  ],
+  "clock": {
+    "format": "󰅐  | {:%a %d %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "network": {
+    "format-wifi": "  {bandwidthDownBits}",
+    "format-ethernet": "  {bandwidthDownBits}",
+    "format-disconnected": "󰤮  No Network",
+    "interval": 5,
+    "tooltip-format-wifi": "Signal Strength:{signalStrength}%"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "nospacing": 1,
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄{capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  },
+  "custom/music-info": {
+    "exec": "~/.config/waybar/scripts/music-info.sh",
+    "format": "{}",
+    "on-click": "spotify",
+    "interval": 1,
+    "tooltip": false
+  },
+  "custom/music-prev": {
+    "exec": "~/.config/waybar/scripts/music-prev.sh",
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/music-control.sh prev",
+    "interval": 1,
+    "tooltip": false
+  },
+  "custom/music-play": {
+    "exec": "~/.config/waybar/scripts/music-play.sh",
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/music-control.sh toggle",
+    "interval": 1,
+    "tooltip": false
+  },
+  "custom/music-next": {
+    "exec": "~/.config/waybar/scripts/music-next.sh",
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/music-control.sh next",
+    "interval": 1,
+    "tooltip": false
+  },
+}
+// okay
