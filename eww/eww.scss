@@ -1,0 +1,95 @@
+* {
+  all: unset;
+  background: transparent;
+  font-family: "Pixeloid Sans";
+}
+
+window {
+  background: transparent;
+}
+
+.container {
+  background-color: #020307;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d8cab8;
+  color: #d8cab8;
+  border-radius: 12px;
+}
+.userinfo-parent {
+  background-color: #020307;
+  color: #d8cab8;
+  border-radius: 12px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bfbbbe;
+}
+.userinfo-child {
+  color: #fdfbfc;
+}
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.completelytrans {
+  background: none;
+}
+
+.button {
+  border-radius: 6px;
+  margin: 10px;
+}
+.button:hover {
+  background-color: #bfbbbe;
+  color: #020307;
+  transition-duration: 150ms;
+}
+.button:active {
+  background-color: #bfbbbe;
+  color: #020307;
+  transition-duration: 150ms;
+}
+
+.poweroff-button {
+  border-radius: 6px;
+  margin: 10px;
+}
+.poweroff-button:hover {
+  background-color: #fc4649;
+  color: #020307;
+  transition-duration: 150ms;
+}
+.poweroff-button:active {
+  background-color: #862526;
+  color: #020307;
+  transition-duration: 150ms;
+}
+
+.suspend-button {
+  border-radius: 6px;
+  margin: 10px;
+}
+.suspend-button:hover {
+  background-color: #bfbbbe;
+  color: #020307;
+  transition-duration: 150ms;
+}
+.suspend-button:active {
+  background-color: #bfbbbe;
+  color: #020307;
+  transition-duration: 150ms;
+}
+
+.icon-label {
+  font-size: 45px;
+  font-weight: normal;
+}
