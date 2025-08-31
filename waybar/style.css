@@ -1,0 +1,120 @@
+* {
+  font-family: "Pixeloid Sans", Maple Mono;
+  border-radius: 8;
+  font-size: 13px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  /* Remove the full background to make it cleaner */
+  background: transparent;
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#clock,
+#custom-music-info,
+#pulseaudio,
+#bluetooth{
+  background-image: linear-gradient(to bottom, #27232b 100%);
+  margin: 10px;
+  margin-right: 0px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: #fdfbfc;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid #fdfbfc;
+  border-top: 1px solid #fdfbfc;
+  transition-duration: 120ms;
+}
+
+#custom-music-info {
+  min-width: 200px;
+}
+
+#custom-music-prev,
+#custom-music-play,
+#custom-music-next {
+  padding: 6px 10px;
+  margin: 6px 4px;
+  font-size: 20px;
+  transition-duration: 120ms;
+  color: #fdfbfc;
+  background-image: linear-gradient(to bottom, #27232b 100%);
+  border: 1px solid #fdfbfc;
+}
+
+#custom-music-info:hover,
+#custom-music-prev:hover,
+#custom-music-play:hover,
+#custom-music-next:hover {
+  background-image: linear-gradient(to bottom, #bfbbbe 100%);
+  color: #020307;
+  transition-duration: 120ms;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid #fdfbfc;
+  border-top: 1px solid #fdfbfc;
+  margin: 10px;
+  margin-right: 0px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  box-shadow:0 0 10px 2px rgba(253, 251, 252, 0.7);
+}
+
+#clock {
+  margin-right: 6px;
+}
+
+#pulseaudio:hover {
+  background-image: linear-gradient(to bottom, #bfbbbe 100%);
+  color: #020307;
+  transition-duration: 120ms;
+}
+
+#battery {
+  background-color: #222222;
+  color: #fdfbfc;
+  
+}
+
+#workspaces {
+  margin: 6px 8px 6px 6px;
+  padding: 0 2px;
+  border-radius: 8px;
+  background: transparent;
+  border-style: none;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+#workspaces button {
+  background: #27232b;
+  color: #fdfbfc;
+  border: none;
+  border-radius: 8px;
+  margin: 0 2px;
+  padding: 2px 8px;
+  min-height: 32px;
+  opacity: 0.5;
+  transition: opacity 120ms, background 120ms, color 120ms;
+}
+
+#workspaces button.active {
+  opacity: 1.0;
+  background: #bfbbbe;
+  color: #020307;
+}
+
+#workspaces button:hover {
+  opacity: 0.85;
+  background: #fdfbfc;
+  color: #27232b;
+}
+
+/* okay */
